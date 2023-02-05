@@ -24,7 +24,7 @@ export const OpenaiImageGenerator = () => {
   const onClickButton = async () => {
     clearValues()
 
-    const url = `http://localhost:3333/create-image?phrase=${inputValue}`
+    const url = `http://localhost:3333/image-generator?phrase=${inputValue}`
     const response = await fetch( url );
 
     if (response.status != 200) {
